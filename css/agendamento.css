@@ -1,0 +1,119 @@
+.cadastro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container1 {
+    /* organizar os elementos de uma página HTML dentro de seus containers de forma dinâmica */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8vh;
+    margin-bottom: 20vh;
+
+}
+
+ h1{
+    width: 100%;
+    margin-top: 13vh;
+    margin-bottom: -25px;
+    text-align: center;
+    font-size: 3vh;
+    color: #9b5c41;
+    padding: 5px;
+}
+
+.form1 {
+    width: 50%;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: 30px;
+}
+
+.inputbox {
+    position: relative;
+    display: flex;
+    flex-direction: column-reverse;
+    height: 40px;
+}
+
+.inputbox label {
+    position: relative;
+    top: 0;
+    left: 10px;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    transition: .5s;
+    cursor: text;
+
+}
+
+.inputbox input {
+    position: absolute;
+    background-color: white;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    box-shadow: none;
+    border: none;
+    outline: none;
+    border-radius: 2px;
+    transition: .5s;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 0 10px;
+}
+
+.inputbox input:focus,
+.inputbox input:valid {
+    height: 100%;
+}
+
+.inputbox input:focus+label,
+.inputbox input:valid+label {
+    top: -40px;
+    left: 0;
+}
+
+.row1 {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn1 {
+    width: 20vh;
+    margin-top: -8vh; 
+    margin-bottom: -300px;
+    border: none;
+}
+
+/* RESPONSIVOOOOOOOOOOOOOOOOOOOOO */
+
+/* dispositivos grandes */
+
+/* dispositivos medios */
+@media(max-width:768px){
+    .row {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 70px;
+    }
+}
+
+@media(max-width:624px) {
+    .row {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 70px;
+    }
+}
+
+

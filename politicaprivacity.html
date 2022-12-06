@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Politica Spazio</title>
+    <link rel="stylesheet" href="css/loja.css">
+    
+    <link href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css" rel="stylesheet">
+</head>
+
+<body>
+    
+    <!-- Header -->
+    <header>
+        <div class="nav container">
+            <!-- icone do menu-->
+            <div class="menu-icon">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            <!-- Nav Lista  -->
+            <ul class="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="empresa.html">Empresa</a></li>
+                <li><a href="agendamento.html">Agendamento</a></li>
+                <li><a href="index.html#products">Produtos</a></li>
+            </ul>
+            <!-- Logo -->
+            <a href="#" class="logo">
+                Spazio Deluxe<span>.</span>
+            </a>
+            <!-- icones da navbar -->
+            <div class="nav-icons">
+                <i class='bx bx-cart-alt' id="cart-icon"></i>
+                <i class='bx bx-user' id="user-icon"></i>
+                <i class='bx bx-user-plus' id="register-icon"></i>
+            </div>
+            <!-- Carrinho -->
+            <div class="cart">
+                <div class="cart-content">
+                    <!-- 1° BOX -->
+                    <div class="cart-box">
+                        <img src="img/popular1.png" alt=""> <!-- FALTA COLOCAR A IMAGEM! -->
+                        <div class="cart-text">
+                            <h3>Móveis Planejados</h3>
+                            <span>150R$</span>
+                            <span>x1</span>
+                        </div>
+                        <i class='bx bx-trash'></i>
+                    </div>
+                    <!-- 2° BOX -->
+                    <div class="cart-box">
+                        <img src="img/popular2.png" alt=""> <!-- FALTA COLOCAR A IMAGEM! -->
+                        <div class="cart-text">
+                            <h3>Móveis Planejados</h3>
+                            <span>150R$</span>
+                            <span>x1</span>
+                        </div>
+                        <i class='bx bx-trash'></i>
+                    </div>
+                    <div class="total">
+                        <h3>Itens</h3>
+                        <span>Total: 300R$</span>
+                    </div>
+                    <a href="#" class="btn"> Comprar Agora</a>
+                </div>
+            </div>
+            <!-- Login Formulario -->
+            <div class="login-form">
+                <!-- Form -->
+                <form action="">
+                    <h2>Login</h2>
+                    <input type="email" name="" id="" placeholder="Seu email..." required>
+                    <input type="password" name="" id="" placeholder="Senha" required>
+                    <a href="#">Esqueceu sua Senha?</a>
+                    <input type="submit" value="Log In" class="btn">
+                    <a href="#">Crie sua conta!</a>
+
+                </form>
+            </div>
+            <!-- Cadastro -->
+            <div class="cadastro-form">
+                <div class='containercadastro'>
+                    <div class='cardcadastro'>
+                        <!-- Form -->
+                        <form action="">
+                            <h2>Cadastro</h2>
+                            <div id='msgError'></div>
+                            <div id='msgSuccess'></div>
+
+                            <div class="label-float">
+                                <input type="text" name="" id="labelNome" for="nome" placeholder="Seu Nome..." required>
+                            </div>
+                            <div class="label-float">
+                                <input type="text" name="" id="labelUsuario" for="usuario" placeholder="Seu usuário..."
+                                    required>
+                            </div>
+                            <div class="label-float">
+                                <input type="email" name="" id="labelemail" for="email" placeholder="Seu email..."
+                                    required>
+                            </div>
+                            <div class="label-float">
+                                <input type="password" name="" id="labelSenha" for="senha" placeholder="Senha" required>
+                                <i id="verSenha" class="fa fa-eye" aria-hidden="true"></i>
+                            </div>
+                            <div class="label-float">
+                                <input type="password" name="" id="labelConfirmSenha" for="confirmSenha"
+                                    placeholder="Confirma Senha" required>
+                                <i id="verConfirmSenha" class="fa fa-eye" aria-hidden="true"></i>
+                            </div>
+                            <label for="usuario" id="labelUsuario">Já tem cadastro? <a href="index.html"><i>voltar para
+                                        login</i></a></label>
+                            <div class='justify-center'>
+                                <button onclick='cadastrar()'> Cadastrar </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h2>Política Privacidade</h2>
+        <p>A sua privacidade é importante para nós. É política do Spazio Deluxe respeitar a sua privacidade em relação a
+            qualquer informação sua que possamos coletar no site <a href=http://127.0.0.1:5500/index.html>Spazio
+                Deluxe</a>,
+            e outros sites que possuímos e operamos.</p>
+        <p>Solicitamos informações pessoais apenas quando realmente precisamos delas para lhe fornecer um serviço.
+            Fazemo-lo
+            por meios justos e legais, com o seu conhecimento e consentimento. Também informamos por que estamos
+            coletando e
+            como será usado. </p>
+        <p>Apenas retemos as informações coletadas pelo tempo necessário para fornecer o serviço solicitado. Quando
+            armazenamos dados, protegemos dentro de meios comercialmente aceitáveis ​​para evitar perdas e roubos, bem
+            como
+            acesso, divulgação, cópia, uso ou modificação não autorizados.</p>
+        <p>Não compartilhamos informações de identificação pessoal publicamente ou com terceiros, exceto quando exigido
+            por
+            lei.</p>
+        <p>O nosso site pode ter links para sites externos que não são operados por nós. Esteja ciente de que não temos
+            controle sobre o conteúdo e práticas desses sites e não podemos aceitar responsabilidade por suas
+            respectivas <a href='https://privacidade.me/' target='_BLANK'>políticas de privacidade</a>. </p>
+        <p>Você é livre para recusar a nossa solicitação de informações pessoais, entendendo que talvez não possamos
+            fornecer alguns dos serviços desejados.</p>
+        <p>O uso continuado de nosso site será considerado como aceitação de nossas práticas em torno de privacidade e
+            informações pessoais. Se você tiver alguma dúvida sobre como lidamos com dados do usuário e informações
+            pessoais, entre em contato conosco.</p>
+        <h2>Política de Cookies Spazio Deluxe</h2>
+        <h3>O que são cookies?</h3>
+        <p>Como é prática comum em quase todos os sites profissionais, este site usa cookies, que são pequenos arquivos
+            baixados no seu computador, para melhorar sua experiência. Esta página descreve quais informações eles
+            coletam,
+            como as usamos e por que às vezes precisamos armazenar esses cookies. Também compartilharemos como você pode
+            impedir que esses cookies sejam armazenados, no entanto, isso pode fazer o downgrade ou 'quebrar' certos
+            elementos da funcionalidade do site.</p>
+        <h3>Como usamos os cookies?</h3>
+        <p>Utilizamos cookies por vários motivos, detalhados abaixo. Infelizmente, na maioria dos casos, não existem
+            opções
+            padrão do setor para desativar os cookies sem desativar completamente a funcionalidade e os recursos que
+            eles
+            adicionam a este site. É recomendável que você deixe todos os cookies se não tiver certeza se precisa ou não
+            deles, caso sejam usados ​​para fornecer um serviço que você usa.</p>
+        <h3>Desativar cookies</h3>
+        <p>Você pode impedir a configuração de cookies ajustando as configurações do seu navegador (consulte a Ajuda do
+            navegador para saber como fazer isso). Esteja ciente de que a desativação de cookies afetará a
+            funcionalidade
+            deste e de muitos outros sites que você visita. A desativação de cookies geralmente resultará na desativação
+            de
+            determinadas funcionalidades e recursos deste site. Portanto, é recomendável que você não desative os
+            cookies.
+        </p>
+
+</body>
+<script src="./js/main.js"></script>
+
+</html>

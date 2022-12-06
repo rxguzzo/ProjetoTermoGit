@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <title>Marcenária Spazio Deluxe</title>
+    <!-- link css -->
+    <link rel="stylesheet" href="css/loja.css">
+    <link rel="stylesheet" href="css/agendamento.css">
+    <!-- icones -->
+    <link href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Scroll no topo -->
+    <a href="#home" class="scroll-top"><i class='bx bx-up-arrow-alt'></i></a>
+    <!-- Header -->
+    <header>
+        <div class="nav container">
+            <!-- icone do menu-->
+            <div class="menu-icon">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            <!-- Nav Lista  -->
+            <ul class="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="empresa.html">Empresa</a></li>
+                <li><a href="agendamento.html">Agendamento</a></li>
+                <li><a href="index.html#products">Produtos</a></li>
+            </ul>
+            <!-- Logo -->
+            <a href="index.html" class="logo">
+                Spazio Deluxe<span>.</span>
+            </a>
+            <!-- icones da navbar -->
+            <div class="nav-icons">
+                <i class='bx bx-cart-alt' id="cart-icon"></i>
+                <i class='bx bx-user' id="user-icon"></i>
+            </div>
+            <!-- Carrinho -->
+            <div class="cart">
+                <div class="cart-content">
+                    <!-- 1° BOX -->
+                    <div class="cart-box">
+                        <img src="img/popular1.png" alt=""> <!-- FALTA COLOCAR A IMAGEM! -->
+                        <div class="cart-text">
+                            <h3>Móveis Planejados</h3>
+                            <span>150R$</span>
+                            <span>x1</span>
+                        </div>
+                        <i class='bx bx-trash'></i>
+                    </div>
+                    <!-- 2° BOX -->
+                    <div class="cart-box">
+                        <img src="img/popular2.png" alt=""> <!-- FALTA COLOCAR A IMAGEM! -->
+                        <div class="cart-text">
+                            <h3>Móveis Planejados</h3>
+                            <span>150R$</span>
+                            <span>x1</span>
+                        </div>
+                        <i class='bx bx-trash'></i>
+                    </div>
+                    <div class="total">
+                        <h3>Itens</h3>
+                        <span>Total: 300R$</span>
+                    </div>
+                    <a href="#" class="btn"> Comprar Agora</a>
+                </div>
+            </div>
+            <!-- Login Formulario -->
+            <div class="login-form">
+                <!-- Form -->
+                <form action="">
+                    <h2>Login</h2>
+                    <input type="email" name="" id="" placeholder="Seu email..." required>
+                    <input type="password" name="" id="" placeholder="Senha" required>
+                    <a href="#">Esqueceu sua Senha?</a>
+                    <input type="submit" value="Log In" class="btn btn-primary">
+                    <a href="cadastrar.html">Crie sua conta!</a>
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <h1>Cadastre-se e agende um dia para o seu atendimento residencial</h1>
+    <main class="container1 form">
+
+        <form class="form1">
+            <div class="row">
+                <div class="inputbox">
+                    <input type="text" class="form-control" id="nome" required>
+                    <label for="nome">Nome</label>
+                </div>
+                <div class="inputbox">
+                    <input type="text" class="form-control" name="$email" id="email" required>
+                    <label for="email">Email</label>
+                </div>
+                <div class="inputbox">
+                    <input type="text" class="telefone form-control" name="telefone" id="telefone" required>
+                    <label for="telefone">Telefone</label>
+                </div>
+
+                <div class="inputbox">
+                    <input type="text" id="complemento" required>
+                    <label for="complemento">Idade</label>
+                </div>
+
+                <div class="inputbox">
+                    <input type="text" class="form-control" name="$cep" id="cep" required onfocus="this.value='';">
+                    <label for="cep">CEP</label>
+                </div>
+
+                <div class="inputbox">
+                    <input type="text" class="form-control" name="$endereco" id="endereco" required>
+                    <label for="endereco">Endereço</label>
+                </div>
+
+                <div class="inputbox">
+                    <input type="text" class="form-control" name="$numero" id="numero" required>
+                    <label for="numero">Número</label>
+                </div>
+
+                <div class="inputbox">
+                    <input type="text" class="form-control" name="$bairro" id="bairro" required>
+                    <label for="bairro">Bairro</label>
+                </div>
+                <div class="inputbox">
+                    <input type="text" class="form-control" name="$cidade" id="cidade" required>
+                    <label for="cidade">Cidade</label>
+                </div>
+                <div class="inputbox">
+                    <input type="text" class="form-control" name="$estado" id="estado" required>
+                    <label for="estado">Estado</label>
+                </div>
+                <textarea class="textarea"
+                    placeholder="Digite o que desejar (reclamações, ajuda e acolhimento...)"></textarea>
+
+                <div class="inputbox">
+                    <input type="date" class="form-control" id="data" required>
+                    <label for="data">Data para o Agendamento</label>
+                </div>
+            </div>
+            <div class="row1">
+                <button type="submit" value="submit" class="btn btn1 btn-primary"> ENVIAR </button>
+            </div>
+
+        </form>
+    </main>
+    <br><br>
+    <!-- Footer começo -->
+    <section class="footer container">
+        <div class="footer-box">
+            <h3>A empresa</h3>
+            <a href="empresa.html">Sobre nós</a>
+            <a href="empresa.html">Ajuda</a>
+            <a href="#products">Produtos</a>
+            <a href="politicaprivacity.html">Política de Privacidade</a>
+        </div>
+        <div class="footer-box">
+            <h3>Mais informações</h3>
+            <a href="empresa.html#mapbox">Endereço</a>
+            <a href="index.html#cart">Entregas</a>
+            <a href="agendamento.html">Fale Conosco</a>
+            <a href="index.html">Sitemap</a>
+        </div>
+        <div class="footer-box">
+            <h3>Redes sociais</h3>
+            <div class="social">
+                <a href="https://pt-br.facebook.com/marcenariaspaziodeluxe/"><i class='bx bxl-facebook'></i></a>
+                <a href="#"><i class='bx bxl-twitter'></i></a>
+                <a href="https://www.instagram.com/marcenariaspaziodeluxe/?hl=en"><i class='bx bxl-instagram'></i></a>
+            </div>
+        </div>
+    </section>
+    <!-- Footer fim -->
+    <!-- copyright -->
+    <div class="copyright">
+        <p>&#169; SpazioDeluxe. Todos Direitos Licenciados</p>
+    </div>
+    <!-- link JS -->
+    <script src="./js/empresa.js"></script>
+</body>
+
+</html>
